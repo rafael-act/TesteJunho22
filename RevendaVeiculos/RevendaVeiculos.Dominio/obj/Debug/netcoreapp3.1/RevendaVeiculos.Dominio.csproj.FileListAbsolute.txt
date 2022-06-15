@@ -1,0 +1,10 @@
+C:\Users\Rafael\Desktop\TesteJunho22\TesteJunho22\RevendaVeiculos\RevendaVeiculos.Dominio\bin\Debug\netcoreapp3.1\RevendaVeiculos.Dominio.deps.json
+C:\Users\Rafael\Desktop\TesteJunho22\TesteJunho22\RevendaVeiculos\RevendaVeiculos.Dominio\bin\Debug\netcoreapp3.1\RevendaVeiculos.Dominio.dll
+C:\Users\Rafael\Desktop\TesteJunho22\TesteJunho22\RevendaVeiculos\RevendaVeiculos.Dominio\bin\Debug\netcoreapp3.1\RevendaVeiculos.Dominio.pdb
+C:\Users\Rafael\Desktop\TesteJunho22\TesteJunho22\RevendaVeiculos\RevendaVeiculos.Dominio\obj\Debug\netcoreapp3.1\RevendaVeiculos.Dominio.csproj.AssemblyReference.cache
+C:\Users\Rafael\Desktop\TesteJunho22\TesteJunho22\RevendaVeiculos\RevendaVeiculos.Dominio\obj\Debug\netcoreapp3.1\RevendaVeiculos.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Rafael\Desktop\TesteJunho22\TesteJunho22\RevendaVeiculos\RevendaVeiculos.Dominio\obj\Debug\netcoreapp3.1\RevendaVeiculos.Dominio.AssemblyInfoInputs.cache
+C:\Users\Rafael\Desktop\TesteJunho22\TesteJunho22\RevendaVeiculos\RevendaVeiculos.Dominio\obj\Debug\netcoreapp3.1\RevendaVeiculos.Dominio.AssemblyInfo.cs
+C:\Users\Rafael\Desktop\TesteJunho22\TesteJunho22\RevendaVeiculos\RevendaVeiculos.Dominio\obj\Debug\netcoreapp3.1\RevendaVeiculos.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\Rafael\Desktop\TesteJunho22\TesteJunho22\RevendaVeiculos\RevendaVeiculos.Dominio\obj\Debug\netcoreapp3.1\RevendaVeiculos.Dominio.dll
+C:\Users\Rafael\Desktop\TesteJunho22\TesteJunho22\RevendaVeiculos\RevendaVeiculos.Dominio\obj\Debug\netcoreapp3.1\RevendaVeiculos.Dominio.pdb
