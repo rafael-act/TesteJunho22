@@ -1,0 +1,13 @@
+C:\Users\Rafael\Desktop\TesteJunho22\TesteJunho22\RevendaVeiculos\RevendaVeiculos.Repositorio\bin\Debug\netcoreapp3.1\RevendaVeiculos.Repositorio.deps.json
+C:\Users\Rafael\Desktop\TesteJunho22\TesteJunho22\RevendaVeiculos\RevendaVeiculos.Repositorio\bin\Debug\netcoreapp3.1\RevendaVeiculos.Repositorio.dll
+C:\Users\Rafael\Desktop\TesteJunho22\TesteJunho22\RevendaVeiculos\RevendaVeiculos.Repositorio\bin\Debug\netcoreapp3.1\RevendaVeiculos.Repositorio.pdb
+C:\Users\Rafael\Desktop\TesteJunho22\TesteJunho22\RevendaVeiculos\RevendaVeiculos.Repositorio\bin\Debug\netcoreapp3.1\RevendaVeiculos.Dominio.dll
+C:\Users\Rafael\Desktop\TesteJunho22\TesteJunho22\RevendaVeiculos\RevendaVeiculos.Repositorio\bin\Debug\netcoreapp3.1\RevendaVeiculos.Dominio.pdb
+C:\Users\Rafael\Desktop\TesteJunho22\TesteJunho22\RevendaVeiculos\RevendaVeiculos.Repositorio\obj\Debug\netcoreapp3.1\RevendaVeiculos.Repositorio.csproj.AssemblyReference.cache
+C:\Users\Rafael\Desktop\TesteJunho22\TesteJunho22\RevendaVeiculos\RevendaVeiculos.Repositorio\obj\Debug\netcoreapp3.1\RevendaVeiculos.Repositorio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Rafael\Desktop\TesteJunho22\TesteJunho22\RevendaVeiculos\RevendaVeiculos.Repositorio\obj\Debug\netcoreapp3.1\RevendaVeiculos.Repositorio.AssemblyInfoInputs.cache
+C:\Users\Rafael\Desktop\TesteJunho22\TesteJunho22\RevendaVeiculos\RevendaVeiculos.Repositorio\obj\Debug\netcoreapp3.1\RevendaVeiculos.Repositorio.AssemblyInfo.cs
+C:\Users\Rafael\Desktop\TesteJunho22\TesteJunho22\RevendaVeiculos\RevendaVeiculos.Repositorio\obj\Debug\netcoreapp3.1\RevendaVeiculos.Repositorio.csproj.CoreCompileInputs.cache
+C:\Users\Rafael\Desktop\TesteJunho22\TesteJunho22\RevendaVeiculos\RevendaVeiculos.Repositorio\obj\Debug\netcoreapp3.1\RevendaVeiculos.Repositorio.csproj.CopyComplete
+C:\Users\Rafael\Desktop\TesteJunho22\TesteJunho22\RevendaVeiculos\RevendaVeiculos.Repositorio\obj\Debug\netcoreapp3.1\RevendaVeiculos.Repositorio.dll
+C:\Users\Rafael\Desktop\TesteJunho22\TesteJunho22\RevendaVeiculos\RevendaVeiculos.Repositorio\obj\Debug\netcoreapp3.1\RevendaVeiculos.Repositorio.pdb

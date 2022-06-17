@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RevendaVeiculos", "RevendaV
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RevendaVeiculos.Dominio", "RevendaVeiculos.Dominio\RevendaVeiculos.Dominio.csproj", "{E068A67D-2437-49D2-94ED-BD4437D5085E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RevendaVeiculos.Repositorio", "RevendaVeiculos.Repositorio\RevendaVeiculos.Repositorio.csproj", "{FC561177-0592-48E6-B48E-B5841E2A62B8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{E068A67D-2437-49D2-94ED-BD4437D5085E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E068A67D-2437-49D2-94ED-BD4437D5085E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E068A67D-2437-49D2-94ED-BD4437D5085E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC561177-0592-48E6-B48E-B5841E2A62B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC561177-0592-48E6-B48E-B5841E2A62B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC561177-0592-48E6-B48E-B5841E2A62B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC561177-0592-48E6-B48E-B5841E2A62B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

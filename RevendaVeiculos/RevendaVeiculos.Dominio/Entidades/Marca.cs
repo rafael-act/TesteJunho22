@@ -11,6 +11,7 @@ namespace RevendaVeiculos.Dominio.Entidades
         public string Nome { get; set; }
         public Status Status { get; set; }
 
+        public virtual ICollection<Veiculo> Veiculos { get; set; }
         public override void Validate()
         {
             LimparMensagensValidacao();

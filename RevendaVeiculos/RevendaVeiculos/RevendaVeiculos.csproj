@@ -12,4 +12,14 @@
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.14" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\RevendaVeiculos.Repositorio\RevendaVeiculos.Repositorio.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="config.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
 </Project>

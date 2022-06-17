@@ -12,6 +12,7 @@ namespace RevendaVeiculos.Dominio.Entidades
         public string Documento { get; set; }
         public string Email { get; set; }
         public Endereco Endereco { get; set; }
+        public virtual ICollection<Veiculo> Veiculos { get; set; }
         public Status Status { get; set; }
 
         public override void Validate()

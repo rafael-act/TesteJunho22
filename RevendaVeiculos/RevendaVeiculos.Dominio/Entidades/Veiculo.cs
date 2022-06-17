@@ -7,9 +7,9 @@ namespace RevendaVeiculos.Dominio.Entidades
     public class Veiculo:Entidade
     {
         public int Id { get; set; }
-        public Proprietario Proprietario { get; set; }
+        public virtual Proprietario Proprietario { get; set; }
         public string Renavam { get; set; }
-        public Marca Marca { get; set; }
+        public virtual Marca Marca { get; set; }
         public string Modelo { get; set; }
         public int AnoModelo { get; set; }
         public int Quilometragem { get; set; }
