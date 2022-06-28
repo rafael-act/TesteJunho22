@@ -1,6 +1,3 @@
-# TesteJunho22
-Criar uma aplicação de cadastro de veículos para revenda.
-
 <h1 align="center">
      💻 <a href="#" alt="CastGroup-Teste"> Teste </a>
 </h1>
