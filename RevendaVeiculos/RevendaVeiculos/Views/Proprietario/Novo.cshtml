@@ -1,0 +1,190 @@
+﻿@page
+@model RevendaVeiculos.Dominio.Entidades.Proprietario
+@{
+
+}
+
+@if (ViewBag.Mensagem != null)
+{
+    <div class="alert alert-danger" role="alert">
+        @ViewBag.Mensagem
+    </div>
+}
+
+<div class="text-center">
+    <h1 class="display-4">Cadastrar Proprietário</h1>
+    <p>Formulário de Proprietario (Dono) de veículos</p>
+</div>
+
+<form method="post">
+    <div class="row">
+        <div class="form-group col-6">
+            <label for="nomeInput">Nome</label>
+            <input type="text"
+                   class="form-control"
+                   id="nomtInput"
+                   aria-describedby="nomeHelp"
+                   placeholder="Digite um nome "
+                   name="Nome"
+                   required>
+            <small id="nomeHelp" class="form-text text-muted">Digite um nome.</small>
+        </div>
+        <div class="form-group col-5">
+            <label for="docInput">Documento</label>
+            <input type="text"
+                   class="form-control"
+                   id="docInput"
+                   aria-describedby="docHelp"
+                   placeholder="Digite um documento "
+                   name="Documento"
+                   required>
+            <small id="docHelp" class="form-text text-muted">Digite um valor.</small>
+        </div>
+    </div><div class="row">
+        <div class="form-group col-6">
+            <label for="docInput">Email</label>
+            <input type="email"
+                   class="form-control"
+                   id="emailInput"
+                   aria-describedby="emailHelp"
+                   placeholder="Digite um email "
+                   name="Email"
+                   required>
+            <small id="emailHelp" class="form-text text-muted">Digite um email.</small>
+        </div>
+        <div class="form-group col-6">
+            <label for="cepInput">CEP</label>
+            <input type="number"
+                   class="form-control"
+                   id="cepInput"
+                   aria-describedby="cepHelp"
+                   placeholder="Digite um cep "
+                   name="Endereco.Cep"
+                   onfocusout="consultaEndereco(this.value)"
+                   required>
+            <small id="cepHelp" class="form-text text-muted">Digite um cep.</small>
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-6">
+            <label for="estadoInput">Estado</label>
+            <input type="text"
+                   class="form-control"
+                   id="estadoInput"
+                   aria-describedby="estadoHelp"
+                   placeholder="Digite um Estado "
+                   name="Endereco.Estado">
+            <small id="cepHelp" class="form-text text-muted">Digite um cep.</small>
+        </div>
+        <div class="form-group col-6">
+            <label for="cidadeInput">Cidade</label>
+            <input type="text"
+                   class="form-control"
+                   id="cidadeInput"
+                   aria-describedby="cidadeHelp"
+                   placeholder="Digite uma Cidade "
+                   name="Endereco.Cidade">
+            <small id="cidadeHelp" class="form-text text-muted">Digite uma cidade.</small>
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-6">
+            <label for="cidadeInput">Bairro</label>
+            <input type="text"
+                   class="form-control"
+                   id="bairroInput"
+                   aria-describedby="bairroHelp"
+                   placeholder="Digite um Bairro "
+                   name="Endereco.Bairro">
+            <small id="bairroHelp" class="form-text text-muted">Digite um bairro.</small>
+        </div>
+        <div class="form-group col-6">
+            <label for="cidadeInput">Rua</label>
+            <input type="text"
+                   class="form-control"
+                   id="ruaInput"
+                   aria-describedby="ruaHelp"
+                   placeholder="Digite um Rua "
+                   name="Endereco.Rua">
+            <small id="ruaHelp" class="form-text text-muted">Digite uma rua.</small>
+        </div>
+      
+    </div>
+    <div class="row">
+        <div class="form-group col-6">
+            <label for="numeroInput">Número</label>
+            <input type="number"
+                   class="form-control"
+                   id="numeroInput"
+                   aria-describedby="numeroHelp"
+                   placeholder="Digite um Numero "
+                   name="Endereco.Numero">
+            <small id="ruaHelp" class="form-text text-muted">Digite um numero.</small>
+        </div>
+        <div class="form-group col-6 d-none">
+            <label for="servicoInput">Servico</label>
+            <input type="text"
+                   class="form-control"
+                   id="servicoInput"
+                   aria-describedby="servicoHelp"
+                   placeholder=" "
+                   name="Endereco.Servico"
+                   value="Api">
+            <small id="servicoHelp" class="form-text text-muted"></small>
+        </div>
+        <div class="form-group form-check col-6">
+            <input type="checkbox"
+                   class="form-check-input"
+                   id="statusCheck"
+                   name="Status"
+                   checked
+                   style="display:block">
+            <label class="form-check-label" for="statusCheck">Ativo</label>
+        </div>
+    </div>
+        <button type="submit" class="btn btn-primary">Salvar</button>
+        @Html.ActionLink("Voltar", "Index", "Proprietario", null, new { @class = "btn btn-secondary" })
+</form>
+
+<script>
+    function consultaEndereco(value) {
+        debugger;
+        console.log(value);
+        if (value.length == 8) {
+            $.ajax({
+                type: 'GET',
+                dataType: 'json',
+                url: '/Proprietario/ConsultaEndereco',
+                data: { cep: value },
+                success: function (Data) {
+                    console.log(Data.result);
+                    if (Data.result != undefined) {
+                        var endereco = Data.result;
+                        $("#estadoInput").val(endereco.estado);
+                        $("#cidadeInput").val(endereco.cidade);
+                        $("#bairroInput").val(endereco.bairro);
+                        $("#ruaInput").val(endereco.rua);
+                        $("#numeroInput").val('');
+                    } else {
+                        $("#numeroInput").val('');
+                        $("#estadoInput").val('');
+                        $("#cidadeInput").val('');
+                        $("#bairroInput").val('');
+                        $("#ruaInput").val('');
+                        $("#numeroInput").val('');
+                    }
+                },
+                error: function (XMLHttpRequest, textStatus, errorThrown) {
+
+                }
+            });
+        }
+        else {
+            $("#numeroInput").val('');
+            $("#estadoInput").val('');
+            $("#cidadeInput").val('');
+            $("#bairroInput").val('');
+            $("#ruaInput").val('');
+        }
+    }
+</script>

@@ -9,11 +9,14 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.1.15" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.2.0" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.14" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\RevendaVeiculos.Repositorio\RevendaVeiculos.Repositorio.csproj" />
+    <ProjectReference Include="..\RevendaVeiculos.Services\RevendaVeiculos.Services.csproj" />
   </ItemGroup>
 
   <ItemGroup>

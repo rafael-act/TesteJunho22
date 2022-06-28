@@ -10,5 +10,6 @@ namespace RevendaVeiculos.Dominio.Contratos
         TEntity ObterPorId(int id);
         IEnumerable<TEntity> ObterTodos();
         void Atualizar(TEntity entity);
+        bool ValidaDuplicacao(TEntity entity);
     }
 }

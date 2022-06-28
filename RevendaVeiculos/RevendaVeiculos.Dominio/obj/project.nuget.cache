@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "aIzz7Eme56461CMbbG2tIjH4mQuwl5jZaUp8Ge5GQ/JkxfXbA5fb3G1FmMW9FMmzbXKmmf0pL6cHhVB0up1yRg==",
+  "dgSpecHash": "aqyQfYnOF1vQgDmHcOgXslo7BC+sQSJrCGTOmJVHtri0/1ZeF0A+UmJi0V6KCgUsS/dWBfqS5kLJgOGf6tf4jQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Rafael\\Desktop\\TesteJunho22\\TesteJunho22\\RevendaVeiculos\\RevendaVeiculos.Dominio\\RevendaVeiculos.Dominio.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Rafael\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
   "logs": []
 }

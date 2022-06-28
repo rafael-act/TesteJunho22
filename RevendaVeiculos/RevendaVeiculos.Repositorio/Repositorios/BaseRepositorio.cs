@@ -1,35 +1,51 @@
 ﻿using RevendaVeiculos.Dominio.Contratos;
+using RevendaVeiculos.Repositorio.Contexto;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace RevendaVeiculos.Repositorio.Repositorios
 {
     public class BaseRepositorio<TEntity> : IBaseRepositorio<TEntity> where TEntity : class
     {
+        protected readonly RevendaVeiculosContexto RevendaVeiculosContexto;
+        
+        public BaseRepositorio(RevendaVeiculosContexto revendaVeiculosContexto)
+        {
+            RevendaVeiculosContexto = revendaVeiculosContexto;
+        }
+
         public void Adicionar(TEntity entity)
         {
-            throw new NotImplementedException();
+            RevendaVeiculosContexto.Set<TEntity>().Add(entity);
+            RevendaVeiculosContexto.SaveChanges();
         }
 
         public void Atualizar(TEntity entity)
         {
-            throw new NotImplementedException();
+            RevendaVeiculosContexto.Set<TEntity>().Update(entity);
+            RevendaVeiculosContexto.SaveChanges();
         }
 
         public void Dispose()
         {
-            throw new NotImplementedException();
+            RevendaVeiculosContexto.Dispose();
         }
 
         public TEntity ObterPorId(int id)
         {
-            throw new NotImplementedException();
+            return RevendaVeiculosContexto.Set<TEntity>().Find(id);
         }
 
         public IEnumerable<TEntity> ObterTodos()
         {
-            throw new NotImplementedException();
+            return RevendaVeiculosContexto.Set<TEntity>().ToList();
+        }
+
+        public bool ValidaDuplicacao(TEntity entity)
+        {
+            return false;
         }
     }
 }

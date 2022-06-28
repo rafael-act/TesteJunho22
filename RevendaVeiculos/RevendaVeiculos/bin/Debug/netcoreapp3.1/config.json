@@ -1,10 +1,5 @@
 {
-  "exclude": [
-    "**/bin",
-    "**/bower_components",
-    "**/jspm_packages",
-    "**/node_modules",
-    "**/obj",
-    "**/platforms"
-  ]
+  "ConnectionStrings": {
+    "RevendaVeiculosDB": "server=127.0.0.1;uid=root;pwd=ROOT;database=RevendaVeiculosDB"
+  }
 }

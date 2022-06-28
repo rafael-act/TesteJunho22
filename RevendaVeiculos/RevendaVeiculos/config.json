@@ -1,6 +1,5 @@
 {
   "ConnectionStrings": {
-    "RevendaVeiculosDB": "server=127.0.0.1;uid=root;pwd=root;database=test"
+    "RevendaVeiculosDB": "server=127.0.0.1;uid=root;pwd=ROOT;database=RevendaVeiculosDB"
   }
-
 }

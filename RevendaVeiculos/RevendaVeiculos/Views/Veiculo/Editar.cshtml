@@ -1,0 +1,110 @@
+﻿@page
+@model RevendaVeiculos.Dominio.Entidades.Veiculo
+@{
+
+}
+
+@if (ViewBag.Mensagem != null)
+{
+    <div class="alert alert-danger" role="alert">
+        @ViewBag.Mensagem
+    </div>
+}
+
+<div class="text-center">
+    <h1 class="display-4">Cadastrar Veiculo</h1>
+    <p>Formulário de veículos</p>
+</div>
+
+<form method="post">
+    <div class="row">
+        <div class="form-group col-6">
+            <label for="nomeInput">Renavam</label>
+            @Html.EditorFor(model => model.Renavam,
+           new { htmlAttributes = new
+           {
+               @class = "form-control",
+               @id = "renavamInput",
+               @required = "required",
+               @type = "text"
+           } })
+            <small id="renavamHelp" class="form-text text-muted">Digite um valor.</small>
+        </div>
+        <div class="form-group col-6">
+            <label for="nomeInput">Modelo</label>
+            @Html.EditorFor(model => model.Renavam,
+         new
+              {
+                  htmlAttributes = new
+         {
+             @class = "form-control",
+             @id = "modeloInput",
+             @required = "required",
+             @type = "text"
+         }
+              })
+            <small id="modeloHelp" class="form-text text-muted">Digite um modelo.</small>
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-6">
+            <label for="anoInput">Ano</label>
+            @Html.EditorFor(model => model.Renavam,
+         new
+              {
+                  htmlAttributes = new
+         {
+             @class = "form-control",
+             @id = "anoInput",
+             @required = "required",
+             @type = "number"
+         }
+              })
+            <small id="anoHelp" class="form-text text-muted">Digite um ano.</small>
+        </div>
+        <div class="form-group col-6">
+            <label for="quilometragemInput">Quilometragem</label>
+            @Html.EditorFor(model => model.Quilometragem,
+        new
+             {
+                 htmlAttributes = new
+        {
+            @class = "form-control",
+            @id = "quilometragemInput",
+            @required = "required",
+            @type = "number"
+        }
+             })
+            <small id="quilometragemHelp" class="form-text text-muted">Digite um valor.</small>
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-6">
+            <label for="valorInput">Valor</label>
+            @Html.EditorFor(model => model.Valor,
+       new
+            {
+                htmlAttributes = new
+       {
+           @class = "form-control",
+           @id = " alorInput",
+           @required = "required",
+           @type = "number"
+       }
+            })
+            <small id="valorHelp" class="form-text text-muted">Digite um valor.</small>
+        </div>
+    </div>
+    <div class="form-group form-check">
+        @Html.Raw(ViewBag.Opcoes)
+        <select class="form-control">
+            @foreach (var item in ViewBag.Opcoes)
+            {
+                <option value="item.Id">@item.Nome</option>
+            }
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Salvar</button>
+    @Html.ActionLink("Voltar", "Index", "Proprietario", null, new { @class = "btn btn-danger" })
+</form>
+

@@ -1,0 +1,44 @@
+﻿@model IEnumerable<RevendaVeiculos.Dominio.Entidades.Marca>
+
+
+@if (ViewBag.Mensagem != null)
+{
+    <div class="alert alert-success" role="alert">
+        @ViewBag.Confirma
+    </div>
+}
+<div class="text-center">
+    <h1 class="display-4">Marca</h1>
+    <p>Lista de Marcas (Fabricantes) de veículos</p>
+</div>
+<div class="text-right mb-5">
+    @Html.ActionLink("Novo", "Novo", "Marca", null, new { @class = "btn btn-primary" })
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Status</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.ToList())
+        {
+            <tr>
+                <th scope="row">@Html.DisplayFor(modelItem => item.Id)</th>
+                <td>@Html.DisplayFor(modelItem => item.Nome)</td>
+                <td>
+                    @if (item.Status)
+                    {
+                    <span>Ativo</span> 
+                    }
+                    else { <span>Inativo</span>  }
+                </td>
+                <td> @Html.ActionLink("Editar", "Editar", "Marca", new { id = 1 }, new { @class = "btn btn-secondary" })</td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace RevendaVeiculos.Dominio.Contratos
 {
-    interface IUsuasrioRepositorio:IBaseRepositorio<Usuario>
+    public interface IEnderecoRepositorio:IBaseRepositorio<Endereco>
     {
     }
 }

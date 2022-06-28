@@ -9,7 +9,7 @@ namespace RevendaVeiculos.Dominio.Entidades
     {
         public int Id { get; set; }
         public string Nome { get; set; }
-        public Status Status { get; set; }
+        public bool Status { get; set; }
 
         public virtual ICollection<Veiculo> Veiculos { get; set; }
         public override void Validate()
@@ -19,11 +19,6 @@ namespace RevendaVeiculos.Dominio.Entidades
             if (string.IsNullOrEmpty(Nome))
             {
                 AdicionarCritica("Nome da marca não foi informado");
-            }
-
-            if(!Enum.IsDefined(typeof(Status), Status))
-            {
-                AdicionarCritica("Status não foi informado");
             }
         }
     }

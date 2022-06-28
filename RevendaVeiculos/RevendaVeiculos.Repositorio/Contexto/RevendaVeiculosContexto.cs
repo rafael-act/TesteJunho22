@@ -9,7 +9,7 @@ namespace RevendaVeiculos.Repositorio.Contexto
     public class RevendaVeiculosContexto : DbContext
     {
 
-        public DbSet<Endereco> Endereços { get; set; }
+        public DbSet<Endereco> Enderecos { get; set; }
         public DbSet<Marca> Marcas { get; set; }
         public DbSet<Proprietario> Proprietarios { get; set; }
         public DbSet<Usuario> Usuarios { get; set; }
@@ -29,5 +29,6 @@ namespace RevendaVeiculos.Repositorio.Contexto
             modelBuilder.ApplyConfiguration(new VeiculoConfiguration());
             base.OnModelCreating(modelBuilder);
         }
+
     }
 }

@@ -1,11 +1,14 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using RevendaVeiculos.Dominio.Contratos;
 using RevendaVeiculos.Repositorio.Contexto;
+using RevendaVeiculos.Repositorio.Repositorios;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,7 +21,9 @@ namespace RevendaVeiculos
         public Startup(IConfiguration configuration)
         {
             var builder = new ConfigurationBuilder();
+
             builder.AddJsonFile("config.json", optional: false, reloadOnChange: true);
+
             Configuration = builder.Build();
         }
 
@@ -27,12 +32,19 @@ namespace RevendaVeiculos
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+
+            var connectionstring = Configuration.GetConnectionString("RevendaVeiculosDB");
+            services.AddDbContext<RevendaVeiculosContexto>(option =>
+                                                    option.UseLazyLoadingProxies()
+                                                          .UseMySql(connectionstring));
+            //services.AddScoped<IEnderecoRepositorio, EnderecoRepositorio>();
+            services.AddScoped<IMarcaRepositorio, MarcaRepositorio>();
+            services.AddScoped<IProprietarioRepositorio, ProprietarioRepositorio>();
+            // services.AddScoped<IUsuarioRepositorio, UsuarioRepositorio>();
+            services.AddScoped<IVeiculoRepositorio, VeiculoRepositorio>();
             services.AddControllersWithViews();
-            var connectionString = Configuration.GetConnectionString("RevendaVeiculosDB");
-            services.AddDbContext<RevendaVeiculosContexto>(options =>
-                                                            options.UseLazyLoadingProxies()
-                                                            .UseMySql(connectionString,
-                                                            m => m.MigrationsAssembly("RevendaVeiculo.Repositorio")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

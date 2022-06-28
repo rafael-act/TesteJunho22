@@ -35,7 +35,10 @@ namespace RevendaVeiculos.Repositorio.Config
             builder
                .Property(e => e.Servico)
                .IsRequired()
-               .HasMaxLength(100);            
+               .HasMaxLength(100);
+            builder
+               .Property(e => e.Numero)
+               .IsRequired();
         }
     }
 }

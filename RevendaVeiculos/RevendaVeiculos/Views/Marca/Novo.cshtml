@@ -1,0 +1,41 @@
+﻿@page
+@model RevendaVeiculos.Dominio.Entidades.Marca
+@{
+
+}
+
+@if (ViewBag.Mensagem != null)
+{
+<div class="alert alert-danger" role="alert">
+    @ViewBag.Mensagem
+</div>
+ }
+
+<div class="text-center">
+    <h1 class="display-4">Cadastrar Marca</h1>
+    <p>Formulário de Marcas (Fabricantes) de veículos</p>
+</div>
+
+<form method="post">
+    <div class="form-group">
+        <label for="nomeInput">Nome</label>
+        <input type="text"
+               class="form-control"
+               id="nomtInput"
+               aria-describedby="nomeHelp"
+               placeholder="Digite um nome de marca"
+               name="Nome">
+        <small id="nomeHelp" class="form-text text-muted">Digite um nome.</small>
+    </div>
+    <div class="form-group form-check">
+        <input type="checkbox"
+               class="form-check-input"
+               id="statusCheck"
+               name="Status"
+               value="1">
+        <label class="form-check-label" for="statusCheck">Ativo</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Salvar</button>
+    @Html.ActionLink("Voltar", "Index", "Marca", null, new { @class = "btn btn-danger" })
+</form>
+

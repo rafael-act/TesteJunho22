@@ -1,4 +1,6 @@
 C:\Users\Rafael\Desktop\TesteJunho22\TesteJunho22\RevendaVeiculos\RevendaVeiculos.Repositorio\bin\Debug\netcoreapp3.1\RevendaVeiculos.Repositorio.deps.json
+C:\Users\Rafael\Desktop\TesteJunho22\TesteJunho22\RevendaVeiculos\RevendaVeiculos.Repositorio\bin\Debug\netcoreapp3.1\RevendaVeiculos.Repositorio.runtimeconfig.json
+C:\Users\Rafael\Desktop\TesteJunho22\TesteJunho22\RevendaVeiculos\RevendaVeiculos.Repositorio\bin\Debug\netcoreapp3.1\RevendaVeiculos.Repositorio.runtimeconfig.dev.json
 C:\Users\Rafael\Desktop\TesteJunho22\TesteJunho22\RevendaVeiculos\RevendaVeiculos.Repositorio\bin\Debug\netcoreapp3.1\RevendaVeiculos.Repositorio.dll
 C:\Users\Rafael\Desktop\TesteJunho22\TesteJunho22\RevendaVeiculos\RevendaVeiculos.Repositorio\bin\Debug\netcoreapp3.1\RevendaVeiculos.Repositorio.pdb
 C:\Users\Rafael\Desktop\TesteJunho22\TesteJunho22\RevendaVeiculos\RevendaVeiculos.Repositorio\bin\Debug\netcoreapp3.1\RevendaVeiculos.Dominio.dll
@@ -11,3 +13,4 @@ C:\Users\Rafael\Desktop\TesteJunho22\TesteJunho22\RevendaVeiculos\RevendaVeiculo
 C:\Users\Rafael\Desktop\TesteJunho22\TesteJunho22\RevendaVeiculos\RevendaVeiculos.Repositorio\obj\Debug\netcoreapp3.1\RevendaVeiculos.Repositorio.csproj.CopyComplete
 C:\Users\Rafael\Desktop\TesteJunho22\TesteJunho22\RevendaVeiculos\RevendaVeiculos.Repositorio\obj\Debug\netcoreapp3.1\RevendaVeiculos.Repositorio.dll
 C:\Users\Rafael\Desktop\TesteJunho22\TesteJunho22\RevendaVeiculos\RevendaVeiculos.Repositorio\obj\Debug\netcoreapp3.1\RevendaVeiculos.Repositorio.pdb
+C:\Users\Rafael\Desktop\TesteJunho22\TesteJunho22\RevendaVeiculos\RevendaVeiculos.Repositorio\obj\Debug\netcoreapp3.1\RevendaVeiculos.Repositorio.genruntimeconfig.cache

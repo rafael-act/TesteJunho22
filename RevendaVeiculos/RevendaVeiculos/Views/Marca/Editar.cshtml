@@ -1,0 +1,27 @@
+﻿@page
+@model RevendaVeiculos.Dominio.Entidades.Marca
+@{
+}
+<div class="text-center">
+    <h1 class="display-4">Editar Marca</h1>
+    <p>Formulário de Marcas (Fabricantes) de veículos</p>
+</div>
+
+<form method="post">
+    <div class="form-group">
+        <label for="nomeInput">Nome</label>
+        @Html.EditorFor(model => model.Nome, new { htmlAttributes = new { @class = "form-control", @id = "nomeInput" } })
+        <small id="nomeHelp" class="form-text text-muted">Digite um nome.</small>
+    </div>
+    <div class="form-group form-check">
+        <input type="checkbox"
+               class="form-check-input"
+               id="statusCheck"
+               name="Status"
+               value="ativo">
+        @Html.CheckBoxFor(model => model.Status)
+        <label class="form-check-label" for="statusCheck">Ativo</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Salvar</button>
+    @Html.ActionLink("Voltar", "Index", "Marca", null, new { @class = "btn btn-danger" })
+</form>

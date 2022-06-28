@@ -11,7 +11,7 @@ namespace RevendaVeiculos.Dominio.Entidades
         public string Nome { get; set; }
         public string Documento { get; set; }
         public string Email { get; set; }
-        public Endereco Endereco { get; set; }
+        public virtual Endereco Endereco { get; set; }
         public virtual ICollection<Veiculo> Veiculos { get; set; }
         public Status Status { get; set; }
 
