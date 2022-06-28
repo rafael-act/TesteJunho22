@@ -37,7 +37,6 @@ Tabela de conteúdos
    * [Como executar o projeto](#-como-executar-o-projeto)
      * [Pré-requisitos](#pré-requisitos)
    * [Tecnologias](#-tecnologias)
-     * [WebApi](#)
    * [Como contribuir no projeto](#-como-contribuir-no-projeto)
    * [Autor](#-autor)
    * [Licença](#user-content--licença)
